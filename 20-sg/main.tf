@@ -1,6 +1,6 @@
 
 module "mysql_sg" {
-    source = "git::https://github.com/nani3013/terraform-aws-security-group-1.git?ref=main"
+    source = "git::https://github.com/nani3013/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name = "mysql"
@@ -10,7 +10,7 @@ module "mysql_sg" {
 }
 
 module "bastion_sg" {
-    source = "git::https://github.com/nani3013/terraform-aws-security-group-1.git?ref=main"
+    source = "git::https://github.com/nani3013/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name = "bastion"
@@ -20,7 +20,7 @@ module "bastion_sg" {
 }
 
 module "node_sg" {
-    source = "git::https://github.com/nani3013/terraform-aws-security-group-1.git?ref=main"
+    source = "git::https://github.com/nani3013/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name = "node"
@@ -30,7 +30,7 @@ module "node_sg" {
 }
 
 module "eks_control_plane_sg" {
-    source = "git::https://github.com/nani3013/terraform-aws-security-group-1.git?ref=main"
+    source = "git::https://github.com/nani3013/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name = "eks-control-plane"
@@ -40,7 +40,7 @@ module "eks_control_plane_sg" {
 }
 
 module "ingress_alb_sg" {
-    source = "git::https://github.com/nani3013/terraform-aws-security-group-1cd .git?ref=main"
+    source = "git::https://github.com/nani3013/terraform-aws-security-group.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     sg_name = "ingress-alb"
